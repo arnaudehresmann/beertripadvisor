@@ -7,7 +7,11 @@ class App extends Component {
   constructor(props){
     super(props);
     if(navigator.geolocation){
-      navigator.geolocation.getCurrentPosition(this.setPosition);
+      //navigator.geolocation.getCurrentPosition(this.setPosition);
+      this.state = {
+        lng : 2.564092,
+        lat : 47.133745
+      };  
     } else {
       this.state = {
         lng : 2.564092,
